@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
+  item:any[]=[
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'},
+    {name:"Panadol extra",img:'product pic.jpg'}
+  ]
 
 }

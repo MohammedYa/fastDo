@@ -1,0 +1,74 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    color: rgb(170, 170, 170);
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 25em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus  {
+    background-color: #f0eeee;
+  }
+  
+ i{
+    color: rgb(180,180,183);
+ }
+ 
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons  .excel, .icons .vector{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.icons .vector{
+    margin-left: 15px;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ul .nav-item{
+   display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+}
+ul .nav-item a{
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+li a{
+    color: rgb(152,152,152);
+}

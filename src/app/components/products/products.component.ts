@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
 
+  item:any[] = [
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+    {img:'../../../assets/pills.jpg', name: 'Panadol'},
+  ]
 }
+

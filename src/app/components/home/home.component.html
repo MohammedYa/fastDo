@@ -1,1 +1,149 @@
-<p>home works!</p>
+<div >
+    <section class="row heade-section">
+        <div class="col-lg-6">
+            <div>
+                <h1 class="mb-4">Welcome to FastDo!</h1>
+                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla inventore alias sapiente illum, quis nam doloribus itaque quia at tempore.quam laudantium quibusdam saepe nemo dolore.</p>
+                <button class="btn btn-dark">Learn more</button>
+            </div>
+        </div>
+        <div class="col-md-6 ext-center">
+            <div class="text-center">
+                <img src="../../../assets/home.png" alt="pharmaeutical pic" 
+                class="head-pic ">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="head-services">
+            <div class="box text-center">
+                <div><img src="../../../assets/medical.png" alt="medical"></div>
+                <div><p>Developing pharmacy management</p></div>
+            </div>
+            <div class="box box-light text-center">
+                <div><img src="../../../assets/warehouse (1).png" alt="medical"></div>
+                <div><p>Developing warehouse management</p></div>
+            </div>
+            <div class="box text-center">
+                <div><img src="../../../assets/replace.png" alt="medical"></div>
+                <div><p>Find and replace rows</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row who-we-are">
+        <div class="col-lg-6 text-center vid">
+            <video width="90%" height="350" controls muted autoplay>
+                <source src="movie.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-lg-6 content-text">
+            <div>
+                <h2 class="text-center">Who we are?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, totam in perferendis eveniet sunt hic facere soluta quibusdam molestias, consectetur eligendi ad distinctio illo dolorem fugiat, ea magni necessitatibus 
+                ducimus!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories container">
+        <h2>Categories</h2>
+        <div class="row text-center">
+            <div *ngFor="let cat of categories" class="col-md-4 col-sm-6 mb-5">
+                <div>
+                    <p>{{cat.categoryName}}</p>
+                    <img src="{{cat.categoryImgPath}}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="distributors">
+        <h2 class="text-center">Our Distributors</h2>
+        <div class="carosule-parent text-center">
+            <splide   [options]="{ type: 'loop', perPage: 3,drag   : 'free', arrows:true}" >
+                <splide-slide  *ngFor="let slide of slides" >
+                    <div class="text-center p-3 dis-item">
+                        <p class="disName">{{slide.distributorName}}</p>
+                        <p class="disRate">
+                            <i class="fa-solid fa-star yellowStar"></i>
+                            <i class="fa-solid fa-star yellowStar"></i>
+                            <i class="fa-solid fa-star yellowStar"></i>
+                            <i class="fa-solid fa-star yellowStar"></i>
+                            <i class="fa-solid fa-star whiteStar"></i>
+                        </p>
+                        <button class="btn btn-dark">view more</button>
+                    </div>
+                </splide-slide>
+            </splide>
+        </div>
+        <p class="right"><a href="#" class="show-more">Show More</a></p>
+    </section>
+
+    <section class="website-services px-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="w-100" 
+                        src="../../../assets/freepik--character-2--inject-3.png" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                        Explore <br> &nbsp; Your best<br> &nbsp;Options to<br> &nbsp;Use our web
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mt-4">
+                <div class="service-item" >
+                    <img src="../../../assets/excel.png" style="width: 64px;" alt="">
+                    <p class="servic-name">Excel Sheet</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mt-4 ">
+                <div class="service-item" >
+                    <img src="../../../assets/sticky-notes.png" alt="">
+                    <p class="servic-name">Notes </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mt-4">
+                <div class="service-item" >
+                    <img src="../../../assets/interactivity (1).png" alt="">
+                    <p class="servic-name">Quick Interaction </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mt-4">
+                <div class="service-item" >
+                    <img src="../../../assets/hand (2).png" alt="">
+                    <p style="margin-top: 0;" class="servic-name">Best Offers </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mt-4">
+                <div class="service-item" >
+                    <img src="../../../assets/delivery-van.png" alt="">
+                    <p style="margin-top: 0;" class="servic-name">Fast Delivery </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact px-5 py-3 row">
+        <div style="width: 60%;">
+            <h3 class="mb-3">Web Design</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita hic asperiores consectetur accusamus voluptatem nesciunt ipsum deleniti placeat facilis ab a eaque ducimus commodi fugiat, aliquam quam rerum magni vitae.</p>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" class="form-input" 
+            placeholder="&nbsp; &nbsp; Enter your email Address">
+            <button class="myBtn">Get Started</button>
+        </div>
+    </section>
+</div>

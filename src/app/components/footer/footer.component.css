@@ -1,23 +1,37 @@
 .row{
     background-color: rgb(102,188,146);
     padding: 20px 0;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 .col ul{
     color: #fff;
 }
 .col li{
     list-style: none;
-    text-transform: uppercase;
     font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: capitalize;
     
 }
+.col .sm-links{
+    font-size: 1rem ;
+    font-weight: 400 ;
+    margin-left: 6px;
+    cursor: pointer;
+}
 .col div{
-   
     padding: 7px 0;
-    text-align: center;
+    padding-left: 20%;
+    /* text-align: center; */
 }
 .col small img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-left: 30%; */
+}
+.col small img:hover{
+    cursor: pointer;
 }

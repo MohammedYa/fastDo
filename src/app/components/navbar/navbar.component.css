@@ -72,3 +72,6 @@ ul .nav-item a{
 li a{
     color: rgb(152,152,152);
 }
+.bold{
+  font-weight: 700;
+}
